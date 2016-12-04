@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - users_auth@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="users_auth">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="db_statistics_by_files"/>
+    <schema id="3" name="file_stats"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="line_chart"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="mysticdb"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="proff4"/>
+    <schema id="10" name="proff5"/>
+    <schema id="11" name="statistics_db"/>
+    <schema id="12" name="sys"/>
+    <schema id="13" name="test"/>
+    <schema id="14" name="user"/>
+    <table id="15" parent="1" name="books"/>
+    <table id="16" parent="1" name="hibernate_sequence"/>
+    <column id="17" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="15" name="author">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="19" parent="15" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="20" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="21" parent="16" name="next_val">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
